@@ -76,13 +76,12 @@ button {
 
 /* ===== Typography ===== */
 /* ONLY THE H1 IS CHANGED */
-h1 {
+h1{
     font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    font-size: clamp(2.2rem, 5vw, 3.2rem); /* Smaller, refined impact */
+    font-weight: 700; /* Dropped from 800 to 700 for a cleaner look */
     line-height: 1.1;
-    letter-spacing: -0.03em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em; /* Just a tiny bit of tightness for impact */
     color: #ffffff;
 }
 
