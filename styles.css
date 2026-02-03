@@ -75,38 +75,28 @@ button {
 }
 
 /* ===== Typography ===== */
-/* HIGH-IMPACT REFINED TITLE */
+/* THE "PREMIUM" IMPACT LOOK */
 h1 { 
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700; 
-    font-size: clamp(2.5rem, 6vw, 4rem); /* Large enough to lead, small enough to stay elegant */
-    line-height: 0.9; /* The "impact" secret: brings lines closer together */
-    letter-spacing: -0.05em; /* This creates the "tight," high-fashion impact */
-    margin-bottom: 1.5rem;
+    font-family: 'Instrument Serif', serif !important;
+    font-weight: 400; /* Serif looks best when not too thick */
+    font-style: italic; /* Italics give it that "expensive" sharp look */
+    font-size: clamp(3rem, 8vw, 5rem); 
+    line-height: 0.85; /* Very tight for maximum impact */
+    letter-spacing: -0.03em;
     color: #ffffff;
-    text-transform: none;
+    margin-bottom: 2rem;
 }
 
-/* SUBHEADERS: CLEAN & SPACED */
+/* CLEAN MODERN SUBHEADS */
 h2, h3 {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    text-transform: uppercase; /* Uppercase adds impact to subheads without needing size */
-    letter-spacing: 0.1em; /* Spaced out letters for a modern contrast to the tight H1 */
-    font-size: 0.9rem; /* Small but powerful */
-    color: var(--primary); /* Use your orange color for these */
-    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em; /* Wide spacing for a professional look */
+    color: #ff5722; /* Your accent orange */
+    margin-bottom: 1rem;
 }
-
-/* BODY TEXT */
-p {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7); /* Slightly transparent for better depth */
-}
-
 /* ===== Layout Containers ===== */
 .container {
     max-width: 1200px;
