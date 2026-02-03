@@ -75,38 +75,36 @@ button {
 }
 
 /* ===== Typography ===== */
-/* THE MAIN PUNCHY TITLE */
-/* CLEAN & REFINED TITLES */
+/* HIGH-IMPACT REFINED TITLE */
 h1 { 
     font-family: 'DM Sans', sans-serif;
-    font-weight: 700; /* Bold, but not "Extra Bold" */
-    font-size: clamp(2.2rem, 5vw, 3.5rem); /* Smaller max size */
-    line-height: 1.2; 
-    letter-spacing: -0.01em; /* Subtle tightening */
-    margin-bottom: 1.2rem;
+    font-weight: 700; 
+    font-size: clamp(2.5rem, 6vw, 4rem); /* Large enough to lead, small enough to stay elegant */
+    line-height: 0.9; /* The "impact" secret: brings lines closer together */
+    letter-spacing: -0.05em; /* This creates the "tight," high-fashion impact */
+    margin-bottom: 1.5rem;
     color: #ffffff;
+    text-transform: none;
 }
 
-/* SUBHEADERS */
-h2, h3, h4 {
+/* SUBHEADERS: CLEAN & SPACED */
+h2, h3 {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 500; /* Medium weight - very clean */
-    line-height: 1.4;
-    letter-spacing: 0;
-    margin-bottom: 1rem;
-    color: #f0f0f0;
+    font-weight: 500;
+    text-transform: uppercase; /* Uppercase adds impact to subheads without needing size */
+    letter-spacing: 0.1em; /* Spaced out letters for a modern contrast to the tight H1 */
+    font-size: 0.9rem; /* Small but powerful */
+    color: var(--primary); /* Use your orange color for these */
+    margin-bottom: 0.5rem;
 }
-
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.5rem; }
 
 /* BODY TEXT */
 p {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
-    color: #a0a0a0; /* Dimmed slightly for better hierarchy */
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent for better depth */
 }
 
 /* ===== Layout Containers ===== */
