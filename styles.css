@@ -1053,3 +1053,19 @@ body.light-mode {
     --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
     --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.16);
 }
+
+/* ===== DARK MODE EXTRAS ===== */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode .nav-logo {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Pure black header ONLY in dark mode */
+body.dark-mode .navbar {
+    background: #000000;
+    border-bottom: 1px solid #1a1a1a;
+}
+
