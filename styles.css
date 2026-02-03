@@ -1,4 +1,4 @@
-/* ===== CSS Variables ===== */
+
 /* ===== CSS Variables (DARK MODE DEFAULT) ===== */
 :root {
     /* Brand */
@@ -1067,5 +1067,34 @@ body.dark-mode .nav-logo {
 body.dark-mode .navbar {
     background: #000000;
     border-bottom: 1px solid #1a1a1a;
+}
+/* ===== Theme Toggle (Minimal, No Icons) ===== */
+.theme-toggle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--text-secondary);
+}
+
+.theme-toggle-btn:hover {
+    transform: scale(1.08);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* Subtle state hint */
+body.dark-mode .theme-toggle-btn {
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+body.light-mode .theme-toggle-btn {
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
 }
 
