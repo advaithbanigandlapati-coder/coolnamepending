@@ -1025,3 +1025,33 @@ section {
     color: var(--primary);
     margin-bottom: 1rem;
 }
+
+/* --- CONCEPT DARK MODE OVERRIDES --- */
+body.concept-active {
+    --bg-primary: #0a0a0a !important;
+    --bg-secondary: #141414 !important;
+    --text-primary: #ffffff !important;
+    --text-secondary: #a0a0a0 !important;
+    --border: #282828 !important;
+    --primary: #ff5722 !important; /* Concept Orange */
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    font-family: 'DM Sans', sans-serif !important;
+}
+
+body.concept-active h1, 
+body.concept-active h2, 
+body.concept-active .nav-logo {
+    font-family: 'Instrument Serif', serif !important;
+    font-style: italic;
+}
+
+body.concept-active .navbar {
+    background: rgba(10, 10, 10, 0.95) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+body.concept-active :is(.mission-card, .team-member, .outreach-card, .highlight-box) {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border) !important;
+}
