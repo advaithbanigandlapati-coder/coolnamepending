@@ -77,20 +77,28 @@ button {
 /* ===== Typography ===== */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    font-weight: 800; /* Max "Extra Bold" for that punchy look */
+    line-height: 0.95; /* Tighter line height makes it feel more impactfull */
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.04em; /* Tight letter spacing is the secret to punchy headers */
+    text-transform: uppercase; /* Optional: makes it feel like a bold editorial */
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
-h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
-h4 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+/* Increased font sizes for more "drama" */
+h1 { font-size: clamp(3rem, 8vw, 6rem); } 
+h2 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+h3 { font-size: clamp(2rem, 4vw, 3rem); }
+h4 { font-size: clamp(1.5rem, 3vw, 2rem); }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     color: var(--text-secondary);
+    font-family: 'Inter', sans-serif; /* Cleaner pairing for Syne */
+    font-weight: 450; /* Slightly thicker than normal for readability on black */
+    line-height: 1.6;
+    letter-spacing: -0.01em;
 }
+
 
 /* ===== Layout Containers ===== */
 .container {
