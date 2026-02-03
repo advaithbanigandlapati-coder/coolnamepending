@@ -75,14 +75,19 @@ button {
 }
 
 /* ===== Typography ===== */
-h1{
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+/* THE REGAL TALL TITLE */
+h1 {
+    font-family: 'Instrument Serif', serif !important;
+    font-weight: 400; /* Regal fonts look better when thin */
+    font-size: clamp(4rem, 10vw, 7rem); /* Make it large and dramatic */
+    line-height: 0.8; /* Tightly stacked */
+    letter-spacing: -0.05em; /* Letters almost touching */
+    text-transform: none;
+    font-style: italic; /* Italics add that "Royal" flair */
+    color: #ffffff;
 }
 
-/* EVERYTHING BELOW IS YOUR ORIGINAL STYLE */
+/* KEEP EVERYTHING ELSE ORIGINAL */
 h2, h3, h4, h5, h6 {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -90,7 +95,6 @@ h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
 h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
 h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
 h4 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
