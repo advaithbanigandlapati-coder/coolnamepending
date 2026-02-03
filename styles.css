@@ -75,27 +75,31 @@ button {
 }
 
 /* ===== Typography ===== */
-/* THE "PREMIUM" IMPACT LOOK */
-h1 { 
-    font-family: 'Instrument Serif', serif !important;
-    font-weight: 400; /* Serif looks best when not too thick */
-    font-style: italic; /* Italics give it that "expensive" sharp look */
-    font-size: clamp(3rem, 8vw, 5rem); 
-    line-height: 0.85; /* Very tight for maximum impact */
-    letter-spacing: -0.03em;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700; /* Dropped from 800 to 700 for a cleaner look */
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em; /* Just a tiny bit of tightness for impact */
     color: #ffffff;
-    margin-bottom: 2rem;
 }
 
-/* CLEAN MODERN SUBHEADS */
-h2, h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 0.2em; /* Wide spacing for a professional look */
-    color: #ff5722; /* Your accent orange */
-    margin-bottom: 1rem;
+/* Reduced Sizing */
+h1 { 
+    font-size: clamp(2.2rem, 5vw, 3.2rem); /* Significantly smaller than before */
+}
+
+h2 { 
+    font-size: clamp(1.8rem, 4vw, 2.5rem); 
+    font-weight: 600; /* Subheads feel lighter */
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
 }
 /* ===== Layout Containers ===== */
 .container {
