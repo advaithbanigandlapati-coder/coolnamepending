@@ -1028,11 +1028,6 @@ section {
 /* --- DARK MODE OVERRIDES --- */
 body.concept-active {
     --bg-primary: #0a0a0a !important;
-    --bg-secondary: #141414 !important;
-    --text-primary: #ffffff !important;
-    --text-secondary: #a0a0a0 !important;
-    --border: #282828 !important;
-    --primary: #ff5722 !important; 
     background-color: #0a0a0a !important;
 }
 
@@ -1042,13 +1037,13 @@ body.concept-active h2,
 body.concept-active .nav-logo {
     font-family: 'Instrument Serif', serif !important;
     font-style: italic !important;
-    font-weight: 300 !important; /* Makes title font thinner */
+    font-weight: 300 !important;
     color: #ffffff !important;
 }
 
-/* Header Black in Dark Mode */
+/* Pure Black Header */
 body.concept-active .navbar {
-    background: #000000 !important; /* Pure Black Header */
+    background: #000000 !important;
     border-bottom: 1px solid #1a1a1a !important;
 }
 
@@ -1057,26 +1052,29 @@ body.concept-active .navbar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid #E5E5E5;
-    background: #ffffff;
+    border: 1px solid var(--border);
+    background: white;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
     transition: all 0.3s ease;
     margin-left: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #525252;
 }
 
-/* Button style when Dark Mode is Active */
+.theme-toggle-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Dark Mode Button State */
 body.concept-active .theme-toggle-btn {
     background: #141414;
     border-color: #ff5722;
     color: #ff5722;
-    box-shadow: 0 0 10px rgba(255, 87, 34, 0.3);
 }
 
 .theme-toggle-btn:hover {
-    transform: scale(1.1);
+    transform: rotate(15deg) scale(1.1);
 }
