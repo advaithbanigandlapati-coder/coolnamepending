@@ -75,14 +75,11 @@ button {
 }
 
 /* ===== Typography ===== */
-/* ONLY THE H1 IS CHANGED */
 h1{
-    font-family: 'Syne', sans-serif;
-    font-weight: 700; /* Dropped from 800 to 700 for a cleaner look */
-    line-height: 1.1;
+font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
     margin-bottom: 1rem;
-    letter-spacing: -0.02em; /* Just a tiny bit of tightness for impact */
-    color: #ffffff;
 }
 
 /* EVERYTHING BELOW IS YOUR ORIGINAL STYLE */
