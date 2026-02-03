@@ -76,38 +76,38 @@ button {
 
 /* ===== Typography ===== */
 /* THE MAIN PUNCHY TITLE */
+/* CLEAN & REFINED TITLES */
 h1 { 
-    font-family: 'Syne', sans-serif;
-    font-weight: 800; /* Extra Bold */
-    font-size: clamp(3rem, 7vw, 5.5rem); 
-    line-height: 1.0; 
-    letter-spacing: -0.03em; /* Tight but readable */
-    margin-bottom: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700; /* Bold, but not "Extra Bold" */
+    font-size: clamp(2.2rem, 5vw, 3.5rem); /* Smaller max size */
+    line-height: 1.2; 
+    letter-spacing: -0.01em; /* Subtle tightening */
+    margin-bottom: 1.2rem;
     color: #ffffff;
 }
 
-/* CLEAN SUBHEADERS */
+/* SUBHEADERS */
 h2, h3, h4 {
-    font-family: 'Syne', sans-serif;
-    font-weight: 600; /* Semi-bold (less "shouty") */
-    line-height: 1.3;
-    letter-spacing: normal; /* Back to standard spacing */
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500; /* Medium weight - very clean */
+    line-height: 1.4;
+    letter-spacing: 0;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #f0f0f0;
 }
 
-h2 { font-size: clamp(2rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
-h4 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
 
 /* BODY TEXT */
 p {
-    margin-bottom: 1rem;
-    color: var(--text-secondary);
+    font-family: 'DM Sans', sans-serif;
     font-weight: 400;
+    font-size: 1rem;
     line-height: 1.6;
+    color: #a0a0a0; /* Dimmed slightly for better hierarchy */
 }
-
 
 /* ===== Layout Containers ===== */
 .container {
